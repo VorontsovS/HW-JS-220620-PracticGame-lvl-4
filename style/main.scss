@@ -1,0 +1,121 @@
+.field {
+    width: 300px;
+    height: 200px;
+    background-color: black;
+    position: relative;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    box-sizing: border-box;
+    border: 2px solid yellowgreen;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.key {
+    width: 60px;
+    height: 60px;
+    background-color: green;
+    box-sizing: border-box;
+    border: 2px solid black;
+    text-align: center;
+    color: white;
+    padding-top: 18px;
+    font-size: 16px;
+    user-select: none;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 200px;
+    margin: 20px 45px;
+}
+
+.up {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.left {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.down {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.right {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.obstacle {
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    box-sizing: border-box;
+    border: 2px solid red;
+    position: absolute;
+    display: none;
+}
+
+.obs1 {
+    top: 50px;
+    left: 50px;
+}
+
+.obs2 {
+    top: 150px;
+    left: 150px;
+}
+
+.setFieldSize {
+    width: 400px;
+    height: 215px;
+    background-color: rgba(117, 190, 218, 0.9);
+    box-sizing: border-box;
+    border: 2px solid green;
+    margin-bottom: 10px;
+}
+
+.okField {
+   display: none;
+}
+
+.setObstacle {
+    display: none;    
+    width: 400px;
+    height: 215px;
+    background-color: rgba(117, 190, 218, 0.9);
+    box-sizing: border-box;
+    border: 2px solid green;
+    margin-bottom: 10px;
+}
+
+.coordinatesObstacle {
+    display: none;
+}
+
+.okObs {
+    display: none;
+ }
+
+ .confirmObs {
+    display: none;
+ }

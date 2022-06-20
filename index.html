@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="setFieldSize">
+            <div>Set the field size: from 100px to 1000px</div>
+            <input type="number" id="sizeFieldX" placeholder="Enter width of Field">
+            <br>
+            <input type="number" id="sizeFieldY" placeholder="Enter height of Field">
+            <br>
+            <input type="submit" id="subSizeField" value="Enter">
+            <div class="param"></div>
+            <div>
+                <input type="button" id="okField" value="OK" class="okField">
+            </div>
+        </div>
+        <div class="setObstacle">
+            <div>Set number of obstacle from 0 to 4
+                <input type="number" id="numberObstacle" placeholder="Enter number of obstacle">
+                <input type="submit" id="subSizeField" value="Enter">
+            </div>
+            <div class="paramObstacle">
+            </div>
+            <div class="coordinatesObstacle">
+                <input type="number" id="obsX1" placeholder="Enter X1" class="obsX1">
+                <input type="number" id="obsY1" placeholder="Enter Y1" class="obsY1">
+                <br>
+                <input type="number" id="obsX2" placeholder="Enter X2" class="obsX2">
+                <input type="number" id="obsY2" placeholder="Enter Y2" class="obsY2">
+                <br>
+                <input type="number" id="obsX3" placeholder="Enter X3" class="obsX3">
+                <input type="number" id="obsY3" placeholder="Enter Y3" class="obsY3">
+                <br>
+                <input type="number" id="obsX4" placeholder="Enter X4" class="obsX4">
+                <input type="number" id="obsY4" placeholder="Enter Y4" class="obsY4">
+                <br>
+            </div>            
+            <div>
+                <input type="button" id="okObs" value="Ferify" class="okObs">
+                <input type="button" id="confirmObs" value="Confirm" class="confirmObs">
+            </div>
+            <div class="warningObstacle">
+            </div>
+        </div>
+    </div>
+    <div class="field">
+        <div class="square">
+        </div>
+        <div id="obs1" class="obstacle obs1">
+        </div>
+        <div id="obs2" class="obstacle obs2">
+        </div>
+        <div id="obs3" class="obstacle obs3">
+        </div>
+        <div id="obs4" class="obstacle obs4">
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="up key">
+            UP
+        </div>
+        <div class="down key">
+            DOWN
+        </div>
+        <div class="left key">
+            LEFT
+        </div>
+        <div class="right key">
+            RIGHT
+        </div>
+    </div>
+
+    <script src="./script/main.js"></script>
+</body>
+</html>
